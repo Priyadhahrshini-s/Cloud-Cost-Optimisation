@@ -38,19 +38,53 @@ _*Hence the snapshot is created*_
  
 <img width="776" alt="Screenshot 2024-01-21 102414" src="https://github.com/Priyadhahrshini-s/Cloud-Cost-Optimisation/assets/157268341/07ce5ef8-c308-4362-8b74-da91394ef221">
 
-*_Click on create function and hence we created a lambda function*_
+_*Click on create function and hence we created a lambda function*_
 
-*_Write the code on code source and click on deploy*_
+_*Write the code on code source and click on deploy*_
 
 <img width="843" alt="Screenshot 2024-01-21 102734" src="https://github.com/Priyadhahrshini-s/Cloud-Cost-Optimisation/assets/157268341/d888d3a5-f992-4858-b7a5-9508158c1d04">
 
-*_Click on Test to check whether it is running or not*_
-*_It will show snapshot ,volume ,instances are not described. So to allow this attach
+_*Click on Test and name the event*_
+<img width="611" alt="Screenshot 2024-01-21 102818" src="https://github.com/Priyadhahrshini-s/Cloud-Cost-Optimisation/assets/157268341/1d478329-7695-4c58-8749-d27211c6bfe1">
 
 
+_*The test will be failed because the default lambda function exective time is 3 second and it also show snapshot ,volume ,instances are not described*_
 
+_*To increase the execution time go to configuration tab and click on edit and increase the timeout to 10 second*_
+ _*Now go to permission and click on role name*_
 
+<img width="826" alt="Screenshot 2024-01-21 103455" src="https://github.com/Priyadhahrshini-s/Cloud-Cost-Optimisation/assets/157268341/90e72a71-b4c1-4f1a-83ca-29fb749719b1">
 
+_*Now add permissions to the role *_
+_*click on create inline policy *_
 
+<img width="633" alt="Screenshot 2024-01-21 104028" src="https://github.com/Priyadhahrshini-s/Cloud-Cost-Optimisation/assets/157268341/20f0f9f4-f0da-428d-92eb-b96454025f08">
 
+_*Choose EC2 as a service and add the actions that are shown below*_
+* Delete snapshot
+* Describe snapshot
+* Describe instances
+* Describe volumes
 
+_*Select the resources for all*_
+
+_*Click on Next and give the Policy name*_
+
+<img width="633" alt="Screenshot 2024-01-21 104028" src="https://github.com/Priyadhahrshini-s/Cloud-Cost-Optimisation/assets/157268341/16a83aaa-e690-481d-9e70-70833bc5e5c1">
+
+_*Now go and run the test*_
+
+<img width="831" alt="Screenshot 2024-01-21 104939" src="https://github.com/Priyadhahrshini-s/Cloud-Cost-Optimisation/assets/157268341/788c04ac-2628-499e-8be0-385013fcbf04">
+
+_*Hence the script got executed*_
+
+_*Let's check whether it is working after deleting the instance. Go to EC2 dashboard and select the instance that we created and on action tab click terminate instace_*
+
+<img width="763" alt="Screenshot 2024-01-21 105034" src="https://github.com/Priyadhahrshini-s/Cloud-Cost-Optimisation/assets/157268341/b090cd59-a01b-4edf-a3ac-2c738aa66734">
+
+_*Hence the instance got termninated so the volume attached to the instance also got deleted.But the snapshot that we created is there*_
+_*Now go to lambda function and to source code click on test_*
+
+<img width="856" alt="Screenshot 2024-01-21 105220" src="https://github.com/Priyadhahrshini-s/Cloud-Cost-Optimisation/assets/157268341/ceb82f54-e372-4160-8644-02c3ceed8b60">
+
+_*Now the EBS snapshot is deleted by exection the lambda function*_
