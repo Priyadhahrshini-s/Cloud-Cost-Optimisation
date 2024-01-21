@@ -55,6 +55,7 @@ _*To increase the execution time go to configuration tab and click on edit and i
 
 <img width="826" alt="Screenshot 2024-01-21 103455" src="https://github.com/Priyadhahrshini-s/Cloud-Cost-Optimisation/assets/157268341/90e72a71-b4c1-4f1a-83ca-29fb749719b1">
 
+## Step 4:Attaching permissions to the role
 _*Now add permissions to the role *_
 _*click on create inline policy *_
 
@@ -88,6 +89,8 @@ _*Now go to lambda function and to source code click on test_*
 <img width="856" alt="Screenshot 2024-01-21 105220" src="https://github.com/Priyadhahrshini-s/Cloud-Cost-Optimisation/assets/157268341/ceb82f54-e372-4160-8644-02c3ceed8b60">
 
 _*Now the EBS snapshot is deleted by exection the lambda function*_
+
+## Step 5:Create a Cloud Watch Event
  _*Go to cloud watch and go to rules and click on events*_
 
  _*Give the Rule name and click on schedule rule type and click on next*_
@@ -99,4 +102,7 @@ _*On schedule pattern give the time and date and invoking duration*_
 
 _*Click on next and Hence the cloud watch is created*_
 
-_*So the cloud watch and Lambda function will work together to reduce the cost*_
+### Conclusion
+
+**In this blog, we learned the cloud watch and Lambda function will work together to reduce the cost.**
+
