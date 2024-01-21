@@ -88,3 +88,15 @@ _*Now go to lambda function and to source code click on test_*
 <img width="856" alt="Screenshot 2024-01-21 105220" src="https://github.com/Priyadhahrshini-s/Cloud-Cost-Optimisation/assets/157268341/ceb82f54-e372-4160-8644-02c3ceed8b60">
 
 _*Now the EBS snapshot is deleted by exection the lambda function*_
+ _*Go to cloud watch and go to rules and click on events*_
+
+ _*Give the Rule name and click on schedule rule type and click on next*_
+ <img width="841" alt="Screenshot 2024-01-21 105551" src="https://github.com/Priyadhahrshini-s/Cloud-Cost-Optimisation/assets/157268341/f612ef36-0939-44e5-9ac3-6d6a1ecdc46e">
+<img width="599" alt="Screenshot 2024-01-21 105615" src="https://github.com/Priyadhahrshini-s/Cloud-Cost-Optimisation/assets/157268341/e91c067a-e52c-40b6-b569-4eef6d29d884">
+
+_*On schedule pattern give the time and date and invoking duration*_
+<img width="601" alt="Screenshot 2024-01-21 105825" src="https://github.com/Priyadhahrshini-s/Cloud-Cost-Optimisation/assets/157268341/27558eeb-69ee-4008-980b-7a7e6991ed21">
+
+_*Click on next and Hence the cloud watch is created*_
+
+_*So the cloud watch and Lambda function will work together to reduce the cost*_
