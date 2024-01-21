@@ -40,7 +40,7 @@ _*Hence the snapshot is created*_
 
 _*Click on create function and hence we created a lambda function*_
 
-_*Write the code on code source and click on deploy*_
+_*Write the Python script on code source and click on deploy*_
 
 <img width="843" alt="Screenshot 2024-01-21 102734" src="https://github.com/Priyadhahrshini-s/Cloud-Cost-Optimisation/assets/157268341/d888d3a5-f992-4858-b7a5-9508158c1d04">
 
